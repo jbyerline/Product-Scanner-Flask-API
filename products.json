@@ -1,0 +1,215 @@
+{
+    "lastUpdated": "02-22-2022 10:33:23 PM",
+    "numberFound": 7,
+    "products": [
+        {
+            "id": 0,
+            "brand": "Ubiquiti",
+            "name": "Switch usw-16-poe",
+            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-16-poe",
+            "regex": "\"price\":29900,\"weight\":3920,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 1,
+            "brand": "Ubiquiti",
+            "name": "Switch usw-24-poe",
+            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-24-poe",
+            "regex": "\"price\":37900,\"weight\":3920,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:53:59 PM",
+            "numberOfTrials": 1,
+            "isEnabled": false
+        },
+        {
+            "id": 2,
+            "brand": "Ubiquiti",
+            "name": "Switch usw-48-poe",
+            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-48-poe",
+            "regex": "\"price\":58900,\"weight\":4500,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 3,
+            "brand": "Ubiquiti",
+            "name": "Switch Flex",
+            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-flex",
+            "regex": "\"price\":9900,\"weight\":470,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 4,
+            "brand": "Ubiquiti",
+            "name": "Dream Router",
+            "URL": "https://store.ui.com/collections/early-access/products/dream-router-ea",
+            "regex": "\"price\":7900,\"weight\":1100,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 5,
+            "brand": "Ubiquiti",
+            "name": "Access Point u6-pro",
+            "URL": "https://store.ui.com/products/unifi-ap6-professional",
+            "regex": "\"price\":14900,\"weight\":829,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:54:10 PM",
+            "numberOfTrials": 1,
+            "isEnabled": false
+        },
+        {
+            "id": 6,
+            "brand": "Ubiquiti",
+            "name": "Access Point u6-in-wall",
+            "URL": "https://store.ui.com/products/access-point-wifi-6-in-wall-ea",
+            "regex": "\"price\":17900,\"weight\":550,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 7,
+            "brand": "Ubiquiti",
+            "name": "Access Point u6-mesh",
+            "URL": "https://store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh",
+            "regex": "\"price\":17900,\"weight\":350,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 8,
+            "brand": "Ubiquiti",
+            "name": "Smart PDU",
+            "URL": "https://store.ui.com/products/unifi-smartpower-pdu-pro-ea",
+            "regex": "\"price\":27900,\"weight\":4300,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:54:20 PM",
+            "numberOfTrials": 1,
+            "isEnabled": false
+        },
+        {
+            "id": 9,
+            "brand": "Ubiquiti",
+            "name": "Cloud Key Gen 2",
+            "URL": "https://store.ui.com/collections/unifi-accessories/products/unifi-cloudkey",
+            "regex": "\"price\":17900,\"weight\":907,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 10,
+            "brand": "Ubiquiti",
+            "name": "Doorbell G4-Pro",
+            "URL": "https://store.ui.com/collections/early-access/products/g4-doorbell-pro-ea",
+            "regex": "\"price\":29900,\"weight\":343,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 11,
+            "brand": "Ubiquiti",
+            "name": "G3 Flex Camera",
+            "URL": "https://store.ui.com/collections/unifi-protect-cameras/products/unifi-video-g3-flex-camera",
+            "regex": "\"price\":7900,\"weight\":431,\"compare_at_price\":null,\"inventory_quantity\":0",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 12,
+            "brand": "Prusa",
+            "name": "Satin Sheet",
+            "URL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet/",
+            "regex": "isSellingDenied\":true",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:57:52 PM",
+            "numberOfTrials": 2,
+            "isEnabled": false
+        },
+        {
+            "id": 13,
+            "brand": "Prusa",
+            "name": "Satin Sheet Factory Second",
+            "URL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet-factory-second/",
+            "regex": "isSellingDenied\":true",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:55:18 PM",
+            "numberOfTrials": 1,
+            "isEnabled": false
+        },
+        {
+            "id": 13,
+            "brand": "Prusa",
+            "name": "Smooth Sheet Factory Second",
+            "URL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei/",
+            "regex": "isSellingDenied\":true",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:55:27 PM",
+            "numberOfTrials": 1,
+            "isEnabled": false
+        },
+        {
+            "id": 13,
+            "brand": "Prusa",
+            "name": "Smooth Sheet Factory Second",
+            "URL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei-factory-second/",
+            "regex": "isSellingDenied\":true",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 6,
+            "isEnabled": true
+        },
+        {
+            "id": 14,
+            "brand": "Microsoft",
+            "name": "Xbox Series X BestBuy",
+            "URL": "https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?intl=nosplash&skuId=6428324",
+            "regex": "\"buttonState\":\"SOLD_OUT\",\"displayText\":\"Sold Out\"",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 13,
+            "isEnabled": false
+        },
+        {
+            "id": 15,
+            "brand": "Microsoft",
+            "name": "Xbox Series X Amazon",
+            "URL": "https://www.amazon.com/Xbox-X/dp/B08H75RTZ8",
+            "regex": "We don't know when or if this item will be back in stock.",
+            "isFound": true,
+            "lastFound": "02-22-2022 06:55:38 PM",
+            "numberOfTrials": 24,
+            "isEnabled": false
+        },
+        {
+            "id": 16,
+            "brand": "Microsoft",
+            "name": "Xbox Series X Newegg",
+            "URL": "https://www.newegg.com/p/N82E16868105273",
+            "regex": "\"DisplayPromotionText\":\"OUT OF STOCK\"",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 24,
+            "isEnabled": false
+        }
+    ]
+}
