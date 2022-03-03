@@ -25,7 +25,7 @@ def scan_for_products(products_to_scan):
         # If it is enabled
         if product['isEnabled']:
             # Load the URL:
-            driver.get(product['URL'])
+            driver.get(product['scanURL'])
             # Grab the source code
             response = driver.page_source
             # Strip any weird JSON
@@ -35,11 +35,15 @@ def scan_for_products(products_to_scan):
             product['numberOfTrials'] = product['numberOfTrials'] + 1
             # If the regex does not find a match
             if not re.search(product['regex'], html):
-                # Text me
-                requests.get(
-                    'https://text.byerline.me/send/6193419322/' + urllib.parse.quote(product['name'] + " is in stock."))
-                requests.get(
-                    'https://text.byerline.me/send/6199971463/' + urllib.parse.quote(product['name'] + " is in stock."))
+                for num in product["contactNumbers"]:
+                    # Sent Texts
+                    headers = {"charset": "utf-8", "Content-Type": "application/json"}
+                    url = 'https://text.byerline.me/send'
+                    text_body = {
+                        "phoneNumber": num,
+                        "message": "Product Scanner: " + product["name"] + "is in stock. Access it here: \n\n" + product["productURL"],
+                    }
+                    requests.post(url, json=text_body, headers=headers)
                 # Update product values in JSON file
                 product['isFound'] = True
                 product['isEnabled'] = False
@@ -73,6 +77,10 @@ def init_app():
     options.add_experimental_option('useAutomationExtension', False)
     options.add_argument('--blink-settings=imagesEnabled=false')
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X "
+                                                                         "10_15_7) AppleWebKit/537.36 (KHTML, "
+                                                                         "like Gecko) Chrome/98.0.4758.109 "
+                                                                         "Safari/537.36", "platform": "Windows"})
 
 
 @app.route('/scan')

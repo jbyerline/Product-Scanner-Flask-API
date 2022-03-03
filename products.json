@@ -1,215 +1,322 @@
 {
-    "lastUpdated": "02-22-2022 10:33:23 PM",
-    "numberFound": 7,
+    "lastUpdated": "03-03-2022 03:50:33 PM",
+    "numberFound": 21,
     "products": [
         {
             "id": 0,
             "brand": "Ubiquiti",
             "name": "Switch usw-16-poe",
-            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-16-poe",
+            "productURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-16-poe",
+            "scanURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-16-poe",
             "regex": "\"price\":29900,\"weight\":3920,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": false,
             "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "numberOfTrials": 7178,
+            "isEnabled": true,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 1,
             "brand": "Ubiquiti",
             "name": "Switch usw-24-poe",
-            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-24-poe",
+            "productURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-24-poe",
+            "scanURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-24-poe",
             "regex": "\"price\":37900,\"weight\":3920,\"compare_at_price\":null,\"inventory_quantity\":0",
-            "isFound": true,
-            "lastFound": "02-22-2022 06:53:59 PM",
-            "numberOfTrials": 1,
-            "isEnabled": false
+            "isFound": false,
+            "lastFound": "02-24-2022 01:20:50 PM",
+            "numberOfTrials": 20,
+            "isEnabled": true,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 2,
             "brand": "Ubiquiti",
             "name": "Switch usw-48-poe",
-            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-48-poe",
+            "productURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-48-poe",
+            "scanURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-48-poe",
             "regex": "\"price\":58900,\"weight\":4500,\"compare_at_price\":null,\"inventory_quantity\":0",
-            "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "isFound": true,
+            "lastFound": "02-23-2022 01:33:26 PM",
+            "numberOfTrials": 11,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 3,
             "brand": "Ubiquiti",
             "name": "Switch Flex",
-            "URL": "https://store.ui.com/collections/unifi-network-switching/products/usw-flex",
+            "productURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-flex",
+            "scanURL": "https://store.ui.com/collections/unifi-network-switching/products/usw-flex",
             "regex": "\"price\":9900,\"weight\":470,\"compare_at_price\":null,\"inventory_quantity\":0",
-            "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "isFound": true,
+            "lastFound": "02-23-2022 01:33:38 PM",
+            "numberOfTrials": 11,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 4,
             "brand": "Ubiquiti",
             "name": "Dream Router",
-            "URL": "https://store.ui.com/collections/early-access/products/dream-router-ea",
+            "productURL": "https://store.ui.com/collections/early-access/products/dream-router-ea",
+            "scanURL": "https://store.ui.com/collections/early-access/products/dream-router-ea",
             "regex": "\"price\":7900,\"weight\":1100,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": false,
             "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "numberOfTrials": 7178,
+            "isEnabled": true,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 5,
             "brand": "Ubiquiti",
             "name": "Access Point u6-pro",
-            "URL": "https://store.ui.com/products/unifi-ap6-professional",
+            "productURL": "https://store.ui.com/products/unifi-ap6-professional",
+            "scanURL": "https://store.ui.com/products/unifi-ap6-professional",
             "regex": "\"price\":14900,\"weight\":829,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": true,
             "lastFound": "02-22-2022 06:54:10 PM",
             "numberOfTrials": 1,
-            "isEnabled": false
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 6,
             "brand": "Ubiquiti",
             "name": "Access Point u6-in-wall",
-            "URL": "https://store.ui.com/products/access-point-wifi-6-in-wall-ea",
+            "productURL": "https://store.ui.com/products/access-point-wifi-6-in-wall-ea",
+            "scanURL": "https://store.ui.com/products/access-point-wifi-6-in-wall-ea",
             "regex": "\"price\":17900,\"weight\":550,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": false,
             "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "numberOfTrials": 7178,
+            "isEnabled": true,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 7,
             "brand": "Ubiquiti",
             "name": "Access Point u6-mesh",
-            "URL": "https://store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh",
+            "productURL": "https://store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh",
+            "scanURL": "https://store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh",
             "regex": "\"price\":17900,\"weight\":350,\"compare_at_price\":null,\"inventory_quantity\":0",
-            "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "isFound": true,
+            "lastFound": "03-02-2022 11:10:50 AM",
+            "numberOfTrials": 5406,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 8,
             "brand": "Ubiquiti",
             "name": "Smart PDU",
-            "URL": "https://store.ui.com/products/unifi-smartpower-pdu-pro-ea",
+            "productURL": "https://store.ui.com/collections/early-access/products/smartpower-pro-pdu-ea",
+            "scanURL": "https://store.ui.com/collections/early-access/products/smartpower-pro-pdu-ea",
             "regex": "\"price\":27900,\"weight\":4300,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": true,
             "lastFound": "02-22-2022 06:54:20 PM",
             "numberOfTrials": 1,
-            "isEnabled": false
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 9,
             "brand": "Ubiquiti",
             "name": "Cloud Key Gen 2",
-            "URL": "https://store.ui.com/collections/unifi-accessories/products/unifi-cloudkey",
+            "productURL": "https://store.ui.com/collections/unifi-accessories/products/unifi-cloudkey",
+            "scanURL": "https://store.ui.com/collections/unifi-accessories/products/unifi-cloudkey",
             "regex": "\"price\":17900,\"weight\":907,\"compare_at_price\":null,\"inventory_quantity\":0",
-            "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "isFound": true,
+            "lastFound": "02-23-2022 01:34:00 PM",
+            "numberOfTrials": 11,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 10,
             "brand": "Ubiquiti",
             "name": "Doorbell G4-Pro",
-            "URL": "https://store.ui.com/collections/early-access/products/g4-doorbell-pro-ea",
+            "productURL": "https://store.ui.com/collections/early-access/products/g4-doorbell-pro-ea",
+            "scanURL": "https://store.ui.com/collections/early-access/products/g4-doorbell-pro-ea",
             "regex": "\"price\":29900,\"weight\":343,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": false,
             "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "numberOfTrials": 7230,
+            "isEnabled": true,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 11,
             "brand": "Ubiquiti",
             "name": "G3 Flex Camera",
-            "URL": "https://store.ui.com/collections/unifi-protect-cameras/products/unifi-video-g3-flex-camera",
+            "productURL": "https://store.ui.com/collections/unifi-protect-cameras/products/unifi-video-g3-flex-camera",
+            "scanURL": "https://store.ui.com/collections/unifi-protect-cameras/products/unifi-video-g3-flex-camera",
             "regex": "\"price\":7900,\"weight\":431,\"compare_at_price\":null,\"inventory_quantity\":0",
             "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "lastFound": "02-24-2022 03:09:07 PM",
+            "numberOfTrials": 103,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199971463"
+            ]
         },
         {
             "id": 12,
             "brand": "Prusa",
             "name": "Satin Sheet",
-            "URL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet/",
-            "regex": "isSellingDenied\":true",
+            "productURL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet/",
+            "scanURL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet/",
+            "regex": "isSellingDenied\":false",
             "isFound": true,
-            "lastFound": "02-22-2022 06:57:52 PM",
-            "numberOfTrials": 2,
-            "isEnabled": false
+            "lastFound": "02-23-2022 01:13:59 PM",
+            "numberOfTrials": 3,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322"
+            ]
         },
         {
             "id": 13,
             "brand": "Prusa",
             "name": "Satin Sheet Factory Second",
-            "URL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet-factory-second/",
-            "regex": "isSellingDenied\":true",
+            "productURL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet-factory-second/",
+            "scanURL": "https://www.prusa3d.com/product/double-sided-powder-coated-satin-spring-steel-sheet-factory-second/",
+            "regex": "isSellingDenied\":false",
             "isFound": true,
-            "lastFound": "02-22-2022 06:55:18 PM",
-            "numberOfTrials": 1,
-            "isEnabled": false
-        },
-        {
-            "id": 13,
-            "brand": "Prusa",
-            "name": "Smooth Sheet Factory Second",
-            "URL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei/",
-            "regex": "isSellingDenied\":true",
-            "isFound": true,
-            "lastFound": "02-22-2022 06:55:27 PM",
-            "numberOfTrials": 1,
-            "isEnabled": false
-        },
-        {
-            "id": 13,
-            "brand": "Prusa",
-            "name": "Smooth Sheet Factory Second",
-            "URL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei-factory-second/",
-            "regex": "isSellingDenied\":true",
-            "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 6,
-            "isEnabled": true
+            "lastFound": "03-03-2022 03:50:33 PM",
+            "numberOfTrials": 15,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322"
+            ]
         },
         {
             "id": 14,
-            "brand": "Microsoft",
-            "name": "Xbox Series X BestBuy",
-            "URL": "https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?intl=nosplash&skuId=6428324",
-            "regex": "\"buttonState\":\"SOLD_OUT\",\"displayText\":\"Sold Out\"",
-            "isFound": false,
-            "lastFound": "N/A",
-            "numberOfTrials": 13,
-            "isEnabled": false
+            "brand": "Prusa",
+            "name": "Smooth Sheet",
+            "productURL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei/",
+            "scanURL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei/",
+            "regex": "isSellingDenied\":false",
+            "isFound": true,
+            "lastFound": "02-23-2022 01:14:15 PM",
+            "numberOfTrials": 2,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322"
+            ]
         },
         {
             "id": 15,
-            "brand": "Microsoft",
-            "name": "Xbox Series X Amazon",
-            "URL": "https://www.amazon.com/Xbox-X/dp/B08H75RTZ8",
-            "regex": "We don't know when or if this item will be back in stock.",
+            "brand": "Prusa",
+            "name": "Smooth Sheet Factory Second",
+            "productURL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei-factory-second/",
+            "scanURL": "https://www.prusa3d.com/product/spring-steel-sheet-with-smooth-double-sided-pei-factory-second/",
+            "regex": "isSellingDenied\":false",
             "isFound": true,
-            "lastFound": "02-22-2022 06:55:38 PM",
-            "numberOfTrials": 24,
-            "isEnabled": false
+            "lastFound": "02-23-2022 01:35:01 PM",
+            "numberOfTrials": 11,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322"
+            ]
         },
         {
             "id": 16,
             "brand": "Microsoft",
+            "name": "Xbox Series X BestBuy",
+            "productURL": "https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?intl=nosplash&skuId=6428324",
+            "scanURL": "https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-black/6428324.p?intl=nosplash&skuId=6428324",
+            "regex": "\"buttonState\":\"SOLD_OUT\",\"displayText\":\"Sold Out\"",
+            "isFound": false,
+            "lastFound": "N/A",
+            "numberOfTrials": 15,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6193012831"
+            ]
+        },
+        {
+            "id": 17,
+            "brand": "Microsoft",
+            "name": "Xbox Series X Amazon",
+            "productURL": "https://www.amazon.com/Xbox-X/dp/B08H75RTZ8",
+            "scanURL": "https://www.amazon.com/Xbox-X/dp/B08H75RTZ8",
+            "regex": "We don't know when or if this item will be back in stock.",
+            "isFound": true,
+            "lastFound": "02-23-2022 01:16:00 PM",
+            "numberOfTrials": 25,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6193012831"
+            ]
+        },
+        {
+            "id": 18,
+            "brand": "Microsoft",
             "name": "Xbox Series X Newegg",
-            "URL": "https://www.newegg.com/p/N82E16868105273",
+            "productURL": "https://www.newegg.com/p/N82E16868105273",
+            "scanURL": "https://www.newegg.com/p/N82E16868105273",
             "regex": "\"DisplayPromotionText\":\"OUT OF STOCK\"",
             "isFound": false,
             "lastFound": "N/A",
             "numberOfTrials": 24,
-            "isEnabled": false
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6193012831"
+            ]
+        },
+        {
+            "id": 19,
+            "brand": "Disney",
+            "name": "Park Reservation",
+            "productURL": "https://disneyland.disney.go.com/passes/blockout-dates/api/get-availability/?product-types=enchant-key-pass&destinationId=DLR&numMonths=13",
+            "scanURL": "https://disneyland.disney.go.com/passes/blockout-dates/api/get-availability/?product-types=enchant-key-pass&destinationId=DLR&numMonths=13",
+            "regex": "({\"date\":\"2022-03-27\",\"availability\":\"cms-key-no-availability\",\"facilities\":.{\"facilityName\":\"DLR_CA\",\"available\":false,\"blocked\":false},{\"facilityName\":\"DLR_DP\",\"available\":false,\"blocked\":false}]})",
+            "isFound": true,
+            "lastFound": "03-01-2022 12:09:39 AM",
+            "numberOfTrials": 234,
+            "isEnabled": false,
+            "contactNumbers": [
+                "6193419322",
+                "6199851998"
+            ]
         }
     ]
 }
