@@ -41,7 +41,7 @@ def scan_for_products(products_to_scan):
                     url = 'https://text.byerline.me/send'
                     text_body = {
                         "phoneNumber": num,
-                        "message": "Product Scanner: " + product["name"] + "is in stock. Access it here: \n\n" + product["productURL"],
+                        "message": "Product Scanner: " + product["name"] + " is in stock. Access it here: \n\n" + product["productURL"],
                     }
                     requests.post(url, json=text_body, headers=headers)
                 # Update product values in JSON file
