@@ -33,24 +33,45 @@ def scan_for_products(products_to_scan):
             # print(html)
             # increment the number of trials
             product['numberOfTrials'] = product['numberOfTrials'] + 1
-            # If the regex does not find a match
-            if not re.search(product['regex'], html):
-                for num in product["contactNumbers"]:
-                    # Sent Texts
-                    headers = {"charset": "utf-8", "Content-Type": "application/json"}
-                    url = 'https://text.byerline.me/send'
-                    text_body = {
-                        "phoneNumber": num,
-                        "message": "Product Scanner: " + product["name"] + " is in stock. Access it here: \n\n" + product["productURL"],
-                    }
-                    requests.post(url, json=text_body, headers=headers)
-                # Update product values in JSON file
-                product['isFound'] = True
-                product['isEnabled'] = False
-                product['lastFound'] = datetime.now().strftime("%m-%d-%Y %I:%M:%S %p")
-                products_to_scan['numberFound'] = products_to_scan['numberFound'] + 1
+            if product['negateRegex']:
+                # If the regex does not find a match
+                if not re.search(product['regex'], html):
+                    for num in product["contactNumbers"]:
+                        # Sent Texts
+                        headers = {"charset": "utf-8", "Content-Type": "application/json"}
+                        url = 'https://text.byerline.me/send'
+                        text_body = {
+                            "phoneNumber": num,
+                            "message": "Product Scanner: " + product["name"] + " is in stock. Access it here: \n\n" + product["productURL"],
+                        }
+                        requests.post(url, json=text_body, headers=headers)
+                    # Update product values in JSON file
+                    product['isFound'] = True
+                    product['isEnabled'] = False
+                    product['lastFound'] = datetime.now().strftime("%m-%d-%Y %I:%M:%S %p")
+                    products_to_scan['numberFound'] = products_to_scan['numberFound'] + 1
+                else:
+                    product['isFound'] = False
             else:
-                product['isFound'] = False
+                # If the regex does find a match
+                if re.search(product['regex'], html):
+                    for num in product["contactNumbers"]:
+                        # Sent Texts
+                        headers = {"charset": "utf-8", "Content-Type": "application/json"}
+                        url = 'https://text.byerline.me/send'
+                        text_body = {
+                            "phoneNumber": num,
+                            "message": "Product Scanner: " + product["name"] + " is in stock. Access it here: \n\n" +
+                                       product["productURL"],
+                        }
+                        requests.post(url, json=text_body, headers=headers)
+                    # Update product values in JSON file
+                    product['isFound'] = True
+                    product['isEnabled'] = False
+                    product['lastFound'] = datetime.now().strftime("%m-%d-%Y %I:%M:%S %p")
+                    products_to_scan['numberFound'] = products_to_scan['numberFound'] + 1
+                else:
+                    product['isFound'] = False
     # Update timestamp
     products_to_scan['lastUpdated'] = datetime.now().strftime("%m-%d-%Y %I:%M:%S %p")
     # Once all products have been checked, overwrite file.
