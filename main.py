@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify, request, make_response, url_for, redirect
 from flask_cors import CORS
 import urllib.request
 import re
@@ -15,8 +15,8 @@ app = Flask(__name__)
 CORS(app)
 
 driver = None
-filePath = "/home/jbyerline/ProductScanner/products.json"
-# filePath = "products.json"
+# filePath = "/home/jbyerline/ProductScanner/products.json"
+filePath = "products.json"
 
 
 def scan_for_products(products_to_scan):
@@ -42,7 +42,8 @@ def scan_for_products(products_to_scan):
                         url = 'https://text.byerline.me/send'
                         text_body = {
                             "phoneNumber": num,
-                            "message": "Product Scanner: " + product["name"] + " is in stock. Access it here: \n\n" + product["productURL"],
+                            "message": "Product Scanner: " + product["name"] + " is in stock. Access it here: \n\n" +
+                                       product["productURL"],
                         }
                         requests.post(url, json=text_body, headers=headers)
                     # Update product values in JSON file
@@ -153,6 +154,34 @@ def update_product_state(id, state):
     f.close()
     # Return contents of updated file
     return json.dumps(products_to_scan, indent=4)
+
+
+@app.route('/loadPage', methods=['POST'])
+def create_row_in_gs():
+    if request.method == 'POST':
+        try:
+            driver.get(request.json['url'])
+            page_content = driver.page_source
+            print("regex: ", request.json['regex'], "\nnegateRegex: ", request.json['negateRegex'])
+            if request.json['negateRegex']:
+                if not re.search(request.json['regex'], page_content):
+                    regex_response = "Regex Match Found"
+                else:
+                    regex_response = "Regex Match Not Found"
+            if not request.json['negateRegex']:
+                if re.search(request.json['regex'], page_content):
+                    regex_response = "Regex Match Found"
+                else:
+                    regex_response = "Regex Match Not Found"
+
+            response = {"url": request.json['url'], "regex": request.json['regex'],
+                        "negateRegex": request.json['negateRegex'], "regexResponse": regex_response,
+                        "pageContent": page_content}
+            return response
+        except KeyError:
+            return "Key \"url\" or \"regex\" or \"negateRegex\" not provided", 400
+
+
 
 
 if __name__ == '__main__':
