@@ -105,7 +105,7 @@ def init_app():
                                                                          "Safari/537.36", "platform": "Windows"})
 
 
-@app.route('/scan')
+@app.route('/scan', methods=['GET'])
 def initiate_scan():
     # Read in product data
     f = open(filePath)
@@ -121,7 +121,7 @@ def initiate_scan():
     return json.dumps(updated_json, indent=4)
 
 
-@app.route('/data')
+@app.route('/data', methods=['GET'])
 def get_data():
     # Read in product data
     f = open(filePath)
@@ -131,7 +131,7 @@ def get_data():
     return json.dumps(products_to_scan, indent=4)
 
 
-@app.route('/update/<int:id>/<state>')
+@app.route('/update/<int:id>/<state>', methods=['GET'])
 def update_product_state(id, state):
     # Read in product data
     f = open(filePath)
@@ -154,6 +154,18 @@ def update_product_state(id, state):
     f.close()
     # Return contents of updated file
     return json.dumps(products_to_scan, indent=4)
+
+
+@app.route('/add', methods=['POST'])
+def add_product():
+    # Parse POST Body
+    try:
+        driver.get(request.json['url'])
+        page_content = driver.page_source
+        print("regex: ", request.json['regex'], "\nnegateRegex: ", request.json['negateRegex'])
+    except KeyError:
+        return "Missing one or more keys. {\"id\" \"brand\" \"name\" \"image\" \"productURL\" \"scanURL\" \"regex\" " \
+               "\"negateRegex\" \"isFound\" \"lastFound\" \"numberOfTrials\" \"isEnabled\" \"contactNumbers\"}", 400
 
 
 @app.route('/loadPage', methods=['POST'])
@@ -180,8 +192,6 @@ def create_row_in_gs():
             return response
         except KeyError:
             return "Key \"url\" or \"regex\" or \"negateRegex\" not provided", 400
-
-
 
 
 if __name__ == '__main__':
