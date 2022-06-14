@@ -83,8 +83,8 @@ def scan_for_products(products_to_scan):
 
 @app.before_first_request
 def init_app():
-    # requests.get(
-    #     'https://text.byerline.me/send/6193419322/' + urllib.parse.quote("Product Scanner has started."))
+    requests.get(
+        'https://text.byerline.me/send/6193419322/' + urllib.parse.quote("Product Scanner has started."))
     # Configure and Start Google Chrome
     global driver
     options = Options()
